@@ -40,7 +40,7 @@ A ferramenta que utilizei para realizar os testes foi o https://www.postman.com/
 [POST] http://localhost:8080/usuarios
 
     {
-	    "email": "exemplo@teste.com"
+	    "email": "exemplo@teste.com",
 	    "senha": "umasenha"
     }
 
@@ -67,3 +67,14 @@ A ferramenta que utilizei para realizar os testes foi o https://www.postman.com/
 **3) Acompanhamento da solicitação**
   
 [GET] http://localhost:8080/solicitacoes/{id}
+
+**4) Atualização de status da solicitacao**
+
+[PUT] http://localhost:8080/solicitacoes/{id}
+
+    {
+	    "cliente": {"id": 1},
+	    "dataSolicitacao": "2020-09-01",
+	    "valor": 200.0,
+	    "status": "PENDENTE"
+    }

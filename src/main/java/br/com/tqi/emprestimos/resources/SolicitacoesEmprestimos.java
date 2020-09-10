@@ -37,7 +37,7 @@ public class SolicitacoesEmprestimos {
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
     public SolicitacaoEmprestimo atualizar(@PathVariable("id") Long id, @RequestBody SolicitacaoEmprestimo solicitacaoEmprestimo) {
-        return this.atualizar(id, solicitacaoEmprestimo);
+        return this.service.atualizar(id, solicitacaoEmprestimo);
     }
 
     @DeleteMapping("/{id}")
